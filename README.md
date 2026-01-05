@@ -30,3 +30,8 @@ extract metadata, generate summaries, and perform semantic search.
 ```bash
 cd backend
 python manage.py runserver
+
+### Frontend
+cd frontend
+npm install
+npm start
