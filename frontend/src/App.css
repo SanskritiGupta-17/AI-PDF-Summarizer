@@ -1,0 +1,93 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(circle at top, #050a2a, #00020b);
+  font-family: "Poppins", sans-serif;
+  color: #f0f4f8;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #7c4dff, #5e35b1);
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(124, 77, 255, 0.5);
+}
+
+.upload-section {
+  background: rgba(0, 4, 24, 0.6);
+  border: 2px dashed #7c4dff;
+  padding: 25px;
+  text-align: center;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+.upload-section:hover {
+  background: rgba(0, 4, 24, 0.8);
+}
+
+button.action-btn {
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  background: linear-gradient(135deg, #7c4dff, #5e35b1);
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button.action-btn:hover {
+  background: linear-gradient(135deg, #5e35b1, #392a80);
+}
+
+.metadata-item {
+  margin: 6px 0;
+  font-size: 15px;
+  color: #dfe4f2;
+}
+
+.output-box h3 {
+  border-bottom: 1px solid #7c4dff;
+  padding-bottom: 6px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.output-box {
+  background: rgba(0, 4, 24, 0.7);
+  border-radius: 14px;
+  padding: 22px;
+  border: 1px solid rgba(124, 77, 255, 0.3);
+  margin-top: 15px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  padding: 12px;
+  border-radius: 8px;
+  background: #0b1026;
+}
