@@ -1,22 +1,20 @@
 from django.urls import path
 from .views import (
-    upload_research_paper,
-    read_pdf_metadata,
-    combine_pdfs,
-    break_pdf,
-    basic_extractive_summary,
-    advanced_extractive_summary,
+    pdf_length,
+    metadata,
+    readdata,
+    build_faiss_index,
+    semantic_search,
+    method1,
+    pdf_summary
 )
 
 urlpatterns = [
-    path("upload/", upload_research_paper),
-    path("metadata/", read_pdf_metadata),
-
-    # PDF utilities
-    path("merge/", combine_pdfs),
-    path("split/", break_pdf),
-
-    # Summaries
-    path("summary/basic/", basic_extractive_summary),
-    path("summary/advanced/", advanced_extractive_summary),
+    path('api/pdf-length/', pdf_length),
+    path('api/metadata/', metadata),
+    path('api/read-data/', readdata),
+    path('api/method1/', method1),
+    path('api/pdf_summary/', pdf_summary),
+    path('api/faiss/build/', build_faiss_index),
+    path('api/faiss/search/', semantic_search),
 ]
