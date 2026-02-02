@@ -1,21 +1,30 @@
 import React from "react";
+import { Link, useNavigate } from "react-router-dom";
+import "./Header.css";
 
-const Header = () => {
+function Header() {
+  const navigate = useNavigate();
+  const goToSection = (id) => {
+    navigate(`/#${id}`);
+    setTimeout(() => {
+      const element = document.getElementById(id);
+      if (element) element.scrollIntoView({ behavior: "smooth" });
+    }, 100);
+  };
+
   return (
-    <header style={headerStyle}>
-      <h1>AI-Powered Research Paper Tool</h1>
-    </header>
+    <nav className="navbar">
+      <div className="logo">Research Simplified. Insights Amplified.</div>
+      <ul className="nav-links">
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/upload">Upload</Link></li>
+        <li onClick={() => goToSection("about")}><span>About</span></li>
+        <li onClick={() => goToSection("how-it-works")}><span>How it Works</span></li>
+        <li onClick={() => goToSection("features")}><span>Features</span></li>
+        <li onClick={() => goToSection("contact")}><span>Contact</span></li>
+      </ul>
+    </nav>
   );
-};
-
-const headerStyle = {
-  background: "linear-gradient(135deg, #7c4dff, #5e35b1)",
-  color: "white",
-  padding: "20px",
-  textAlign: "center",
-  borderRadius: "0 0 20px 20px",
-  boxShadow: "0 6px 18px rgba(124, 77, 255, 0.45)",
-  marginBottom: "30px",
-};
+}
 
 export default Header;

@@ -1,0 +1,179 @@
+.center {
+  text-align: center;
+}
+
+.upload-page {
+  padding: 40px 80px;
+  font-size: 18px;
+}
+
+.upload-page h2 {
+ font-size: 25px;
+}
+
+.upload-box {
+  width: 100%;
+  max-width: 1000px;
+  border: 2px dashed #3b4cca;
+  padding: 40px;
+  margin: 30px auto;
+  border-radius: 12px;
+  background: #eef2ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+.upload-box button {
+  padding: 8px 18px;
+  background: #3b4cca;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.upload-box input {
+  font-size: 14px;
+}
+
+/* Hover */
+.upload-box button:hover {
+  background: #2f3aa8;
+  transform: translateY(-1px);
+}
+
+/* Click (active) */
+.upload-box button:active {
+  transform: scale(0.97);
+  background: #24308a;
+}
+
+/* Keyboard focus (accessibility) */
+.upload-box button:focus {
+  outline: 3px solid rgba(59, 76, 202, 0.4);
+  outline-offset: 2px;
+}
+
+.section {
+  width: 100%;
+  max-width: 1000px;        /* same as upload box container */
+  margin: 40px auto;        /* top-bottom 40px, left-right auto */
+  padding: 30px 20px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.section h3{
+  font-size: 25px;
+}
+
+.meta-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.meta-card {
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 16px;
+  text-align: left;
+}
+
+.meta-label {
+  font-size: 13px;
+  color: #64748b;
+  font-weight: 600;
+}
+
+.meta-value {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #0f172a;
+}
+
+.file-row,
+.search-row {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 15px 0;
+}
+
+/* Search Row */
+.search-row input {
+  width: 400px;           /* increase width */
+  padding: 12px 16px;     /* increase height and horizontal padding */
+  font-size: 16px;        /* bigger font */
+  border-radius: 8px;
+  border: 1px solid #cbd5e1; /* subtle border */
+  box-sizing: border-box;
+}
+
+.search-row button {
+  padding: 12px 24px;     /* taller button */
+  font-size: 16px;        /* bigger text */
+  border-radius: 8px;
+  background-color: #3b4cca;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Hover */
+.search-row button:hover {
+  background: #2f3aa8;
+  transform: translateY(-1px);
+}
+
+/* Click (active) */
+.search-row button:active {
+  transform: scale(0.97);
+  background: #24308a;
+}
+
+/* Keyboard focus (accessibility) */
+.search-row button:focus {
+  outline: 3px solid rgba(59, 76, 202, 0.4);
+  outline-offset: 2px;
+}
+
+.file-row button{
+  font-size: 15px;
+}
+
+.result-box {
+  background: #f1f3ff;
+  min-height: 200px;
+  width: 100%;
+  margin-top: 20px;
+  padding: 25px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.source-box {
+  background: #f1f3ff;          /* same as result-box */
+  padding: 15px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  font-size: 15px;
+  line-height: 1.6;
+  text-align: left;
+  color: #0f172a;
+  white-space: pre-wrap;        /* keeps line breaks */
+  font-family: inherit;         /* 🔥 fixes font mismatch */
+}
+
+.msg {
+  color: green;
+  margin-top: 10px;
+  text-align: center;
+}

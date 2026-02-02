@@ -8,13 +8,12 @@ from .views import (
     method1,
     pdf_summary
 )
-
 urlpatterns = [
-    path('api/pdf-length/', pdf_length),
-    path('api/metadata/', metadata),
-    path('api/read-data/', readdata),
-    path('api/method1/', method1),
-    path('api/pdf_summary/', pdf_summary),
-    path('api/faiss/build/', build_faiss_index),
-    path('api/faiss/search/', semantic_search),
+    path('pdf-length/', pdf_length),
+    path('metadata/', metadata),
+    path('read-data/', readdata),
+    path('method1/', method1),
+    path('pdf_summary/', pdf_summary),
+    path('faiss/build/', build_faiss_index),
+    path('faiss/search/', semantic_search),
 ]

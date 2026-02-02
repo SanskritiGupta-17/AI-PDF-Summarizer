@@ -1,21 +1,49 @@
 import React from "react";
+import "./Footer.css";
 
 const Footer = () => {
-  return (
-    <footer style={footerStyle}>
-      <p>© 2026 AI Research Tool | Developed by You</p>
-    </footer>
-  );
-};
+    return (
+        <footer className="footer">
+            <div className="footer-container">
 
-const footerStyle = {
-  background: "#0b1026",
-  color: "#c3cbf7",
-  textAlign: "center",
-  padding: "15px",
-  borderRadius: "20px 20px 0 0",
-  marginTop: "30px",
-  boxShadow: "0 -6px 18px rgba(124, 77, 255, 0.25)",
+                {/* Branding */}
+                <h2 className="footer-title">AI Research Paper Analyzer</h2>
+                <p className="footer-tagline">Research Simplified. Insights Amplified.</p>
+
+                <div className="footer-sections">
+
+                    {/* Optional Built With */}
+                    <div className="footer-column">
+                        <h4>Built With</h4>
+                        <ul>
+                            <li>React</li>
+                            <li>Django REST API</li>
+                            <li>LangChain</li>
+                            <li>Hugging Face</li>
+                            <li>Groq API</li>
+                            <li>FAISS</li>
+                        </ul>
+                    </div>
+
+                    {/* Contact Section */}
+                    <div className="footer-column">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></li>
+                            <li>LinkedIn: <a href="https://linkedin.com/in/yourlinkedin" target="_blank" rel="noopener noreferrer">linkedin.com/in/yourlinkedin</a></li>
+                            <li>GitHub: <a href="https://github.com/yourgithub" target="_blank" rel="noopener noreferrer">github.com/yourgithub</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                {/* Footer Bottom */}
+                <p className="footer-bottom">
+                    © 2026 AI Research Paper Analyzer — Developed by Sanskriti Gupta
+                </p>
+            </div>
+        </footer>
+    );
 };
 
 export default Footer;
