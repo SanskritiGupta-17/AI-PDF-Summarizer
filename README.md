@@ -74,21 +74,29 @@ npm start
 The frontend will open at http://localhost:3000/.
 
 🛠 Usage
-Open the app in your browser.
 
-Upload a research paper (PDF).
+Open the application in your browser
 
-View extracted metadata automatically.
+Upload a research paper in PDF format
 
-Generate AI summaries for quick understanding.
+View automatically extracted metadata
 
-Use semantic search to find relevant content across papers.
+Generate AI-powered summaries
+
+Use semantic search to find relevant content within papers
 
 💡 Future Improvements
-User authentication and profiles.
 
-Save uploaded papers and summaries for later.
+User authentication and profile management
 
-Integrate more advanced NLP models for better summarization.
+Save uploaded papers and generated summaries
 
-Add collaborative features for team research.
+Integration of more advanced NLP and LLM models
+
+Knowledge graph visualization for research insights
+
+Collaboration features for team-based research
+
+📌 License
+
+This project is licensed under the MIT License.
