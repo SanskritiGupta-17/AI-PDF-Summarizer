@@ -24,7 +24,6 @@ A full-stack web application that allows users to upload research papers (PDF), 
 - **Metadata Extraction:** Extract title, authors, abstract, and other metadata automatically.  
 - **AI Summaries:** Generate both basic and advanced summaries of research papers.  
 - **Semantic Search:** Search within papers using semantic search powered by embeddings.  
-- **PDF Manipulation:** Split, merge, and manage PDFs efficiently.  
 
 ---
 
